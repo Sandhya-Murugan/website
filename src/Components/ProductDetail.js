@@ -1,6 +1,6 @@
 import React from 'react';
 import {cardData1, cardData2} from "../Assets/ProductsData";
-import {useParams, } from "react-router-dom";
+import {useParams} from "react-router-dom";
 import '../App.css'
 import AskQuery from "./AskQuery";
 const ProductDetail = () => {

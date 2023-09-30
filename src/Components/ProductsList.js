@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useRef} from 'react';
 import {Card, Col, Carousel, Button} from 'antd';
 import {Link} from "react-router-dom";
 import AskQuery from "./AskQuery";
@@ -38,7 +38,7 @@ const MyCards = ({cardData, cardSet}) => {
 
     const imageAspectRatio = 16 / 12;
 
-    const carouselRef = React.useRef();
+    const carouselRef = useRef();
 
     const handlePrev = () => {
         if (carouselRef.current) {
