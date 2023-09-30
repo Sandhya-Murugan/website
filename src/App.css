@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+.App{
+  margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Products Details Page */
+.product-details-container {
   display: flex;
-  flex-direction: column;
+}
+.product-details-container > div {
+  padding: 5%;
+}
+.product-details-left{
+  width:50%
+}
+.product-details-right{
+  width:50%
+}
+.v1{
+  border-left: 3px solid black;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 10%;
+
+}
+
+
+/* Previous and next button on products list page */
+.carousel-nav {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /*margin-top: 10px; !* Adjust the margin as needed *!*/
 }
 
-.App-link {
-  color: #61dafb;
+.prev-button,
+.next-button {
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  border: none;
+  padding: 8px 16px; /* Adjust padding as needed */
+  cursor: pointer;
+  border-radius: 4px; /* Add rounded corners if desired */
+  /*margin-bottom: 10%;*/
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.prev-button:hover,
+.next-button:hover {
+  background-color: #0056b3; /* Hover background color */
+}
+
+.prev-button {
+  margin-right: 10px; /* Spacing between buttons */
+  margin-top: 0;
+}
+/*----------------------------------------------------------------------------------------*/
+
+/*Search-Bar*/
+.Search-Bar{
+  width: 15%;
+  float: right;
+  margin-top: 1%;
+}
+
+@media only screen and (max-width: 600px) {
+  .Search-Bar{
+    width: 60%;
+    float: right;
+    margin-top: 5%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .burger-menu{
+    float: right;
+    font-size: 30px;
+    margin-top: 4%;
+    color: white;
+    margin-right: 10px;
   }
 }
